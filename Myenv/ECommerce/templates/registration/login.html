@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+<html>
+	<head>
+		<title>Login Page</title>
+	<style>
+		#BG 
+        {
+			
+            padding: 400px;
+            background-repeat: no-repeat;
+            margin:0px;
+            /*background-position: center;
+            background-size: cover;
+           
+            */
+            
+            height: 100%;
+        }
+	</style>
+		<h2>Login</h2>
+		
+	</head>
+	<body id="BG">
+		<div id="Center">
+			<form method="post">
+				{%csrf_token %}
+				{{form.as_p}}
+				<button type="submit">Login</button>
+			</form>
+		</div>
+	</body>
+</html>
+{% endblock %}

@@ -1,0 +1,169 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<html>
+	<head>
+	{% block title %}Home{% endblock %}
+
+	{% block content %}
+	{% if user.is_authenticated %}
+	<link rel="stylesheet" href="{% static 'CSS/goodies.css' %}">
+	    <div class="container">
+	<div class="Object">
+
+    			<div class="img">
+                	
+                	 <img class = "objimg" src="{% static 'Images/T1.jpg' %}" alt="Thanos_Gauntlet" width="200" height="200">   
+                </div>
+				<div class="description">
+
+        				
+        				<h2 >Superman T-Shirt</h2>
+						<ul class="specs" >
+	                		<li>Credits:4</li>
+	                		<li>Special Edition</li>
+	                		
+                      <input class="buy_button" type="submit" value="ADD TO CART" name="obj1">
+	                		
+	                	</ul>
+					</div>
+			  <div class="price_n_offers">
+              		<h3> &#8377 1,999 </h3> 
+              		<p> <span class="strike_through_price"> &#8377 2,999</span> <span class="discount"> 33% off</span></p>
+              		<p>Offers</p>
+              		<ul class="offers">
+              			<li>Credits can be redeemed</li>
+              			<li>Special Price</li>
+              		</ul>
+              </div>
+			 </div>
+
+    	<div class="Object">
+
+    			<div class="img">
+                	
+                	<img class = "objimg" src="{% static 'Images/T2.jpg' %}" alt="Thanos_Gauntlet" width="200" height="200">   
+                </div>
+
+
+
+              <div class="description">
+
+        				
+        				<h2 >Flash T-Shirt</h2>
+                	
+
+                    <ul class="specs" >
+                      <li>Credits:7</li>
+                      <li>Comic con 2018 edition</li>
+                      
+                      <input class="buy_button" type="submit" value="ADD TO CART" name="obj2">
+                      
+                    </ul>
+				</div>
+
+              <div class="price_n_offers">
+              		<h3> &#8377 1,999 </h3> 
+              		<p> <span class="strike_through_price"> &#8377 2,999</span> <span class="discount"> 33% off</span></p>
+              		<p>Offers</p>
+              		<ul class="offers">
+               			<li>Credits can be redeemed</li>
+              			<li>Special Price</li>
+              		</ul>
+              </div>
+			 </div>
+
+    	<div class="Object">
+
+    			<div class="img">
+                	
+                	<img class = "objimg" src="{% static 'Images/T3.jpg' %}" alt="Thanos_Gauntlet" width="200" height="200">   
+                </div>
+
+
+
+              <div class="description">
+
+        				
+        				<h2 >Batman T-Shirt</h2>
+                	
+                    <ul class="specs" >
+                      <li>Credits:2</li>
+                      <li>Batman classic</li>
+                      
+                      <input class="buy_button" type="submit" value="ADD TO CART" name="obj3">
+                      
+                    </ul>
+				</div>
+
+              <div class="price_n_offers">
+              		<h3> &#8377 1,999 </h3> 
+              		<p> <span class="strike_through_price"> &#8377 2,999</span> <span class="discount"> 33% off</span></p>
+              		<p>Offers</p>
+              		<ul class="offers">
+               			<li>Credits can be redeemed</li>
+              			<li>Special Price</li>
+              		</ul>
+              </div>
+    	</div>
+
+    	<div class="Object">
+
+    			<div class="img">
+                	
+                	<img class = "objimg" src="{% static 'Images/T4.jpg' %}" alt="Thanos_Gauntlet" width="200" height="200">   
+                </div>
+				<div class="description">
+
+        				
+        				<h2 >Flash Special T-Shirt</h2>
+                	
+
+                    <ul class="specs" >
+                      <li>Credits:5</li>
+                      <li>Glowing edition</li>
+                      
+                      <input class="buy_button" type="submit" value="ADD TO CART" name="obj4">                      
+                    </ul>
+					</div>
+
+              <div class="price_n_offers">
+              		<h3> &#8377 1,999 </h3> 
+              		<p> <span class="strike_through_price"> &#8377 2,999</span> <span class="discount"> 33% off</span></p>
+              		<p>Offers</p>
+              		<ul class="offers">
+               			<li>Credits can be redeemed</li>
+              			<li>Special Price</li>
+              		</ul>
+              </div>
+			  </div>
+		<div class="Object">
+		<div class="img">
+                	<img class = "objimg" src="{% static 'Images/T5.jpg' %}" alt="Thanos_Gauntlet" width="200" height="200">   
+                </div>
+				<div class="description">
+			  <h2 >Phoenix T-Shirt</h2>
+                    <ul class="specs" >
+                      <li>Credits:8</li>
+                      <li>Distictive Glow edition</li>
+                      
+                      <input class="buy_button" type="submit" value="ADD TO CART" name="obj5">                      
+                    </ul>
+                  </div>
+				<div class="price_n_offers">
+              		<h3> &#8377 1,999 </h3> 
+              		<p> <span class="strike_through_price"> &#8377 2,999</span> <span class="discount"> 33% off</span></p>
+              		<p>Offers</p>
+              		<ul class="offers">
+               			<li>Credits can be redeemed</li>
+              			<li>Special Price</li>
+              		</ul>
+              </div>
+		</div>
+	</div>
+	  <p id="Top-Right"><a href="{% url 'logout' %}">logout</a></p>
+	{% else %}
+	  <p>You are not logged in</p>
+	  <a href="{% url 'login' %}">login</a>
+	{% endif %}
+	{% endblock %}
