@@ -1,0 +1,18 @@
+{% load static %}
+#Center
+{
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	color:black;
+	font-size:25px;
+}
+
+body
+{
+	border: 0px solid black;
+	padding: 470px;
+	background: url(ecomm.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}

@@ -1,28 +1,17 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
 <html>
 	<head>
+	<link rel="stylesheet" href="{% static 'CSS/Login.css' %}">
 		<title>Login Page</title>
-	<style>
-		#BG 
-        {
-			
-            padding: 400px;
-            background-repeat: no-repeat;
-            margin:0px;
-            /*background-position: center;
-            background-size: cover;
-           
-            */
-            
-            height: 100%;
-        }
-	</style>
-		<h2>Login</h2>
+		
 		
 	</head>
-	<body id="BG">
+	<body>
+	<div>
 		<div id="Center">
+		<h2>Login</h2>
 			<form method="post">
 				{%csrf_token %}
 				{{form.as_p}}

@@ -125,6 +125,12 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
 
-LOGIN_REDIRECT_URL='home'
+MEDIA_ROOT=os.path.join(BASE_DIR,'ECommerce/media')
+MEDIA_URL='/media/'
+
+
+
+
+LOGIN_REDIRECT_URL='item_list'
 
 LOGOUT_REDIRECT_URL='home'
