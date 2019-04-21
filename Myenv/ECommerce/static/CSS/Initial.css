@@ -1,0 +1,47 @@
+body
+{
+	border: 0px solid black;
+	padding: 470px;
+	background: url('Initial.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#Status
+{
+	position:absolute;
+	font-size: 50px;
+	font-family: "Times New Roman", Times, serif;
+	align:center;
+	top:15%;
+}
+
+#Loginm
+{
+	font-size: 30px;
+	positon:absolute;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	align:center;
+	padding:20px;
+	top:20%;
+}
+
+#signup
+{
+	font-size: 30px;
+	positon:absolute;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	align:center;
+	padding:20px;
+	top:20%;
+}
+
+#feedback
+{
+	font-size: 30px;
+	positon:absolute;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	align:center;
+	padding:20px;
+	top:20%;
+}

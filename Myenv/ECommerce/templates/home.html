@@ -45,9 +45,12 @@
 		
 	  <p id="Top-Right"><a href="{% url 'logout' %}">logout</a></p>
 	{% else %}
-	  <p>You are not logged in</p>
-	  <a href="{% url 'login' %}">login</a>
-	  <a href="{% url 'signup' %}">Signup</a>
-	   <a href="{% url 'feedback_form' %}">Feedback</a>
+	<link rel="stylesheet" href="{% static 'CSS/Initial.css' %}">
+	<body>
+	  <p id="Status">You are not logged in</p>
+	  <a id="Loginm" href="{% url 'login' %}">login</a>
+	  <a id="signup" href="{% url 'signup' %}">Signup</a>
+	   <a id="feedback" href="{% url 'feedback_form' %}">Feedback</a>
+	  </body>
 	{% endif %}
 	{% endblock %}
