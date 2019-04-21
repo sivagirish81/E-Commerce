@@ -14,3 +14,4 @@ class SignUp(generic.CreateView):
 
 def signup(request):
     return render(request,'signup.html',{})
+

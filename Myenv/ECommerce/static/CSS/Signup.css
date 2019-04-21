@@ -1,0 +1,15 @@
+body
+{
+	border: 0px solid black;
+	padding: 470px;
+	background: url('signup.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#Positioner
+{
+	position:absolute;
+	top:10%;
+	right:30%;
+}
