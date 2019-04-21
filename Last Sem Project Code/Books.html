@@ -1,0 +1,271 @@
+
+<html>
+<head>
+<style>
+
+ul#nav 
+		{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;                   /*What to do if there is an overflow? , we don't expect any, so we have made it hidden*/
+			/* other options: hidden,scroll,auto*/
+			background-color: #555;
+			position: fixed;    /* stays in the same place irrespective of scrolling*/
+			/* other options:   static 
+								relative - relative to normal position
+								fixed - relative to viewport
+								absolute-relative to ancestor 
+								sticky - sticks after offset
+			*/
+			top: 0;         /* related to viewport , so 0px between top and viewport*/
+			width: 100%;
+			left:0px;
+		}
+		ul#nav li 
+		{
+			float: left;
+		}
+		ul#nav li a 
+		{
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		ul#nav li a:hover:not(.active) 
+		{
+			background-color: #111;
+		}
+		.active 
+		{
+			background-color: #111;
+		}
+		
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 5px 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+<script type="text/javascript">
+	<!--
+    function openTab(th)
+    {
+        window.open(th.name,'_blank');
+    }
+	-->
+    </script>
+     <!--  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+	<style>
+		.sidebar a {font-family: "Roboto", sans-serif}
+			body,h1,h2,h3,h4,h5,h6,.wide {font-family: "Montserrat", sans-serif;}
+		
+		.padding-64 light-grey small center
+		{
+		background: orange;
+		}
+	</style>   
+
+</html>
+</head>
+<body>
+
+<ul id="nav">
+		  <li ><a  href="dc.html">Home</a></li>
+		  <li><a href="Goodies.html">Goodies</a></li>
+		  <li><a  href="trivia1.html">Trivia</a></li>
+		  <li><a class="active" href="Books.html">Books</a></li>
+		</ul>
+<h2>DC COMICS</h2>
+<h4 align="center" style="color:blue">Our Comic Collection</h4>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="BOOKs/dc-comics-graphic-novel-superman-doomsday-wars.pdf">
+      <img src="images/DC Universe (2008) 000-001.jpg" alt="Cinque Terre" width="500" height="300">
+    </a>
+    <div class="desc"><a onClick="openTab(this)" href="#" name="BOOKs/dc-comics-graphic-novel-superman-doomsday-wars.pdf">Download Pdf</a></div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="BOOKs/dc-comics-graphic-novel-superman-doomsday-wars.pdf">
+      <img src="images/DC Universe (2008) 000-012.jpg" alt="Forest" width="500" height="300">
+    </a>
+    <div class="desc"><a onClick="openTab(this)" href="#" name="BOOKs/dc-comics-graphic-novel-superman-doomsday-wars.pdf">Download Pdf</a></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="BOOKs/dc-comics-graphic-novel-superman-doomsday-wars.pdf">
+      <img src="images/DC Universe (2008) 000-002.jpg" alt="Northern Lights" width="500" height="300">
+    </a>
+    <div class="desc"><a onClick="openTab(this)" href="#" name="BOOKs/dc-comics-graphic-novel-superman-doomsday-wars.pdf">Download Pdf</a></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="BOOKs/dc-comics-graphic-novel-superman-doomsday-wars.pdf">
+      <img src="images/DC Universe (2008) 000-003.jpg" alt="Northern Lights" width="500" height="300">
+    </a>
+    <div class="desc"><a onClick="openTab(this)" href="#" name="BOOKs/dc-comics-graphic-novel-superman-doomsday-wars.pdf">Download Pdf</a></div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="BOOKs/dc-comics-graphic-novel-superman-doomsday-wars.pdf">
+      <img src="images/DC Universe (2008) 000-004.jpg" alt="Cinque Terre" width="500" height="300">
+    </a>
+    <div class="desc"><a onClick="openTab(this)" href="#" name="BOOKs/dc-comics-graphic-novel-superman-doomsday-wars.pdf">Download Pdf</a></div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="images/DC Universe (2008) 000-005.jpg" alt="Forest" width="500" height="300">
+    </a>
+    <div class="desc"><a onClick="openTab(this)" href="#" name="BOOKs/dc-comics-graphic-novel-superman-doomsday-wars.pdf">Download Pdf</a></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="BOOKs/dc-comics-graphic-novel-superman-doomsday-wars.pdf">
+      <img src="images/DC Universe (2008) 000-011.jpg" alt="Northern Lights" width="500" height="300">
+    </a>
+    <div class="desc"><a onClick="openTab(this)" href="#" name="BOOKs/dc-comics-graphic-novel-superman-doomsday-wars.pdf">Download Pdf</a></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="BOOKs/dc-comics-graphic-novel-superman-doomsday-wars.pdf">
+      <img src="images/DC Universe (2008) 000-007.jpg" alt="Northern Lights" width="500" height="300">
+    </a>
+    <div class="desc"><a onClick="openTab(this)" href="#" name="BOOKs/dc-comics-graphic-novel-superman-doomsday-wars.pdf">Download Pdf</a></div>
+  </div>
+</div>
+
+
+<div class="clearfix"></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="BOOKs/dc-comics-graphic-novel-superman-doomsday-wars.pdf">
+      <img src="images/DC Universe (2008) 000-008.jpg" alt="Cinque Terre" width="500" height="300">
+    </a>
+    <div class="desc"><a onClick="openTab(this)" href="#" name="BOOKs/dc-comics-graphic-novel-superman-doomsday-wars.pdf">Download Pdf</a></div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="BOOKs/dc-comics-graphic-novel-superman-doomsday-wars.pdf">
+      <img src="images/DC Universe (2008) 000-009.jpg" alt="Forest" width="500" height="300">
+    </a>
+    <div class="desc"><a onClick="openTab(this)" href="#" name="BOOKs/dc-comics-graphic-novel-superman-doomsday-wars.pdf">Download Pdf</a></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="BOOKs/dc-comics-graphic-novel-superman-doomsday-wars.pdf">
+      <img src="images/DC Universe (2008) 000-010.jpg" alt="Northern Lights" width="500" height="300">
+    </a>
+    <div class="desc"><a onClick="openTab(this)" href="#" name="BOOKs/dc-comics-graphic-novel-superman-doomsday-wars.pdf">Download Pdf</a></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="BOOKs/dc-comics-graphic-novel-superman-doomsday-wars.pdf">
+      <img src="images/DC Universe (2008) 000-000.jpg" alt="Northern Lights" width="500" height="300">
+    </a>
+    <div class="desc"><a onClick="openTab(this)" href="#" name="BOOKs/dc-comics-graphic-novel-superman-doomsday-wars.pdf">Download Pdf</a></div>
+  </div>
+</div>
+    
+	
+
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+	<footer class="padding-64 light-grey small center"id="footer">
+      <div class="col s4 justify">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> THE HALLOWEEN STORE</p>
+        <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
+        <p><i class="fa fa-fw fa-envelope"></i> reallyscared@spooky.com</p>
+        <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+        <br>
+        <i class="fa fa-facebook-official hover-opacity large"></i>
+        <i class="fa fa-instagram hover-opacity large"></i>
+        <i class="fa fa-snapchat hover-opacity large"></i>
+        <i class="fa fa-pinterest-p hover-opacity large"></i>
+        <i class="fa fa-twitter hover-opacity large"></i>
+        <i class="fa fa-linkedin hover-opacity large"></i>
+      </div>
+    </div>
+  </footer>
+ 
+</div>
+</body>
+</html>
