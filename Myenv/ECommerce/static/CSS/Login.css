@@ -16,3 +16,9 @@ body
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+#Signup
+{
+	position:relative;
+	right:100px;
+}

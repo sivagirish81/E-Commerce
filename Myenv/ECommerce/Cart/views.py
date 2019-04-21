@@ -12,5 +12,9 @@ def image(request):
     itemx=item()
     var=RequestContext(request,{'itemx':itemx})
     return render_to_response('home.html',var)
+	
+def Checkout(request):
+    items=item.objects.all()
+    return render(request,'Checkout.html',{'items':items})
 
 

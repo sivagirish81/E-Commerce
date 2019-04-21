@@ -31,6 +31,19 @@ button:focus
 
 }
 
+.buy_button1
+{
+  margin-top:100px;
+  margin-left:150px;
+  background-color: #4CAF50;
+  border:none;
+  color:white;
+  padding:20px;
+  text-align:center;
+  font-size:16px;
+  border-radius:50%;
+}
+
 .specs {
   list-style: none; /* Remove default bullets */
 }
