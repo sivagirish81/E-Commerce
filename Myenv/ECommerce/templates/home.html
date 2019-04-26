@@ -12,26 +12,26 @@
 	    <div class="container">
 		{% for item in items %}
 	<div class="Object">
-					
+
     			<div class="img">
-                	
-                	 <img class = "objimg" src="{{item.imglink.url}}" alt="Thanos_Gauntlet" width="200" height="200">   
+
+                	 <img class = "objimg" src="{{item.imglink.url}}" alt="Thanos_Gauntlet" width="200" height="200">
                 </div>
 				<div class="description">
 
-        				
+
         				<h2 >{{item.name}}</h2>
 						<ul class="specs" >
 	                		<li>Credits:4</li>
 	                		<li>Special Edition</li>
-	                		
-                      <input id="{{item.itemid}}" class="buy_button" onclick="Adder({{item.price}})" type="submit" value="ADD TO CART" name="{{item.itemid}}">
-					  <input class="buy_button" onclick="Remove({{item.price}})" type="submit" value="REMOVE FROM CART" name="{{item.itemid}}">
-	                		
+
+                      <input id="{{item.itemid}}" class="buy_button" onclick="Adder({{item.price}},{{item.itemid}})" type="submit" value="ADD TO CART" name="{{item.itemid}}">
+					  <button id="{{item.itemid}}" class="buy_button" onclick="Remove({{item.price}},{{item.itemid}},({{item.itemid}}-1000))" type="submit" value="">REMOVE FROM CART</button>
+
 	                	</ul>
 					</div>
 			  <div class="price_n_offers">
-              		<h3> &#8377 {{item.price}} </h3> 
+              		<h3> &#8377 {{item.price}} </h3>
               		<p> <span class="strike_through_price"> &#8377 {{item.price}}</span> <span class="discount"> 33% off</span></p>
               		<p>Offers</p>
               		<ul class="offers">
@@ -42,7 +42,7 @@
 			 </div>
 		{% endfor %}
 		<input class="buy_button" onclick="Checkout()" type="submit" value="PROCEED TO CHECKOUT">
-		
+
 	  <p id="Top-Right"><a href="{% url 'logout' %}">logout</a></p>
 	{% else %}
 	<link rel="stylesheet" href="{% static 'CSS/Initial.css' %}">
@@ -50,7 +50,7 @@
 	  <p id="Status">You are not logged in</p>
 	  <a id="Loginm" href="{% url 'login' %}">login</a>
 	  <a id="signup" href="{% url 'signup' %}">Signup</a>
-	   <a id="feedback" href="{% url 'feedback_form' %}">Feedback</a>
+	  <!-- <a id="feedback" href="{% url 'feedback_form' %}">Feedback</a>-->
 	  </body>
 	{% endif %}
 	{% endblock %}
