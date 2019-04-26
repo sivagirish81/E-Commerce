@@ -4,6 +4,7 @@ function Adder(cost)
 {
 	price+=cost;
 	console.log(price);
+	alert("Item Added");
 }
 
 function Remove(cost,id)
@@ -13,7 +14,8 @@ function Remove(cost,id)
 
 		price-=cost;
 		console.log(price);
-		
+		alert("Item Removed");
+
 	}
 	else
 	{
@@ -25,5 +27,4 @@ function Checkout()
 {
 	alert("Total Amount to be paid="+price);
 }
-	
-	
+
